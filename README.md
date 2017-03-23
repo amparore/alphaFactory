@@ -1,4 +1,17 @@
 
+//=============================================================================
+
+  alphaFactory
+
+A software tool for the computation of alpha-factors for general 
+events in a DSPN net. Takes in input the event function f_g(x),
+the CTMC rate and te accuracy, and outputs the coefficients needed
+for the Uniformization function.
+
+Written by: Elvio G. Amparore, Universita' di Torino, 2017
+
+//=============================================================================
+
 HOW TO COMPILE:
 
 alphaFactory requires Boost-C++ (version 1.60 or greater), and optionally gmp.
@@ -42,3 +55,22 @@ A unit test can be run using:
 HOW TO USE THE API:
 
 Read alphaFactory.h for the description of the exported C++ API functions.
+
+//=============================================================================
+
+Copyright (c) 2017, Universita' di Torino, Elvio G. Amparore <amparore at di.unito.it>
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+//=============================================================================
+
