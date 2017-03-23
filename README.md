@@ -2,11 +2,12 @@
 # alphaFactory
 
 A software tool for the computation of alpha-factors for general probability distribution functions.
+
 The tool takes in input the PDF function f(x), the CTMC rate mu and the accuracy epsilon, 
 and outputs the instantaneous and accumulated alpha-factors coefficients needed by the Uniformization function.
-The tool implements the method found in the book "Performance Analysis of Communication Systems = Modeling with 
+The tool implements the method found in the book "Performance Analysis of Communication Systems - Modeling with 
 non-Markovian Stochastic Petri nets" by Reinhard German, with a modified tail truncation that is 
-correct for both defective and non-defective PDFs.
+correct for both defectives and non-defectives PDFs.
 
 Written by: Elvio G. Amparore, Universita' di Torino, 2017.
 
