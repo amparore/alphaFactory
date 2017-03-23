@@ -1,18 +1,15 @@
 
-//=============================================================================
-
-  alphaFactory
+# alphaFactory
 
 A software tool for the computation of alpha-factors for general 
-events in a DSPN net. Takes in input the event function f_g(x),
-the CTMC rate and te accuracy, and outputs the coefficients needed
+events in a DSPN net. Takes in input the event function f(x),
+the CTMC rate and the accuracy, and outputs the coefficients needed
 for the Uniformization function.
 
-Written by: Elvio G. Amparore, Universita' di Torino, 2017
+Written by: Elvio G. Amparore, Universita' di Torino, 2017.
 
-//=============================================================================
 
-HOW TO COMPILE:
+## How to compile
 
 alphaFactory requires Boost-C++ (version 1.60 or greater), and optionally gmp.
 It also requires a C++11 or better compiler.
@@ -23,13 +20,10 @@ alphaFactory is known to compile on MacOSX and Linux with this command:
    g++ -I/usr/local/include -L/usr/local/lib alphafactory.cpp  -std=c++11 -O2 -o alphafactory
 
  * GMP version:
-   g++ -I/usr/local/include -L/usr/local/lib -DUSE_GMP=1 alphafactory.cpp  -std=c++11 -O2 -lgmp -o alphafactory
+   g++ -I/usr/local/include -L/usr/local/lib -DUSE_GMP=1 alphafactory.cpp -std=c++11 -O2 -lgmp -o alphafactory
 
 
-
-//=============================================================================
-
-HOW TO RUN:
+## Usage examples
 
 The command has this form:
 
@@ -49,14 +43,12 @@ A unit test can be run using:
 ./alphaFactory test
 
 
-
-//=============================================================================
-
-HOW TO USE THE API:
+## API reference
 
 Read alphaFactory.h for the description of the exported C++ API functions.
 
-//=============================================================================
+
+## License
 
 Copyright (c) 2017, Universita' di Torino, Elvio G. Amparore <amparore at di.unito.it>
 
@@ -72,5 +64,4 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-//=============================================================================
 

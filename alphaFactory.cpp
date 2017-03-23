@@ -18,10 +18,10 @@
 //
 //  A software tool for the computation of alpha-factors for general 
 //  events in a DSPN net. Takes in input the event function f_g(x),
-//  the CTMC rate and te accuracy, and outputs the coefficients needed
+//  the CTMC rate and the accuracy, and outputs the coefficients needed
 //  for the Uniformization function.
 //
-//  Written by: Elvio G. Amparore, Universita' di Torino, 2017
+//  Written by: Elvio G. Amparore, Universita' di Torino, 2017.
 //
 // Compile with: (requires boost C++)
 //  clang++ -I/usr/local/include -L/usr/local/lib alphafactors.cpp 
