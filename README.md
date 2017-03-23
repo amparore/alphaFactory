@@ -1,7 +1,7 @@
 
 # alphaFactory
 
-A software tool for the computation of alpha-factors for general probability distribution functions.
+A software tool for the computation of alpha-factors of probability distribution functions.
 
 The tool takes in input the PDF function f(x), the CTMC rate mu and the accuracy epsilon, 
 and outputs the instantaneous and accumulated alpha-factors coefficients needed by the Uniformization function.
