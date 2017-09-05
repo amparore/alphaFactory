@@ -987,17 +987,18 @@ mpfloat compute_positive_tgamma(mpfloat a, mpfloat z) {
 		return result;
 	}
 	catch (std::overflow_error ovf) {
-		try { return compute_positive_tgamma_at_precision<32>(a, z); }
-		catch (std::overflow_error ovf) {
-			try { return compute_positive_tgamma_at_precision<128>(a, z); }
-			catch (std::overflow_error ovf) {
-				try { return compute_positive_tgamma_at_precision<512>(a, z); }
-				catch (std::overflow_error ovf) {
-					// tgamma is too hard to compute, rethrow the exception
-	     			throw ovf;
-				}
-			}
-		}
+		// try { return compute_positive_tgamma_at_precision<32>(a, z); }
+		// catch (std::overflow_error ovf) {
+		// 	try { return compute_positive_tgamma_at_precision<128>(a, z); }
+		// 	catch (std::overflow_error ovf) {
+		// 		try { return compute_positive_tgamma_at_precision<512>(a, z); }
+		// 		catch (std::overflow_error ovf) {
+		// 			// tgamma is too hard to compute, rethrow the exception
+	 //     			throw ovf;
+		// 		}
+		// 	}
+		// }
+		throw ovf;
 	}
 }
 
