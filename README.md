@@ -1,6 +1,4 @@
 
-
-
 # alphaFactory
 
 A software tool for the computation of alpha-factors of probability distribution functions.
